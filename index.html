@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY DESIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Government Branding Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-flex">
+            <div class="gov-branding">
+                <span class="emblem-placeholder"><i class="fa-solid fa-landmark"></i></span>
+                <span>GOVT. SECONDARY SCHOOL PARBUK</span>
+            </div>
+            <div class="top-contact">
+                <span><i class="fa-solid fa-envelope"></i> gssparbuk1964@gmail.com</span>
+                <span><i class="fa-solid fa-phone"></i> 7002840841</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo-box">
+                <img src="school.jpg" alt="School Logo" style="width: 15%; height: 10%; object-fit: contain; border-radius: 50%;">
+                <div class="logo-text">
+                    <h2>GOVT. SECONDARY SCHOOL PARBUK</h2>
+                    <p>AFFILIATION NO: 2220081</p>
+                    <p>SCHOOL CODE: 37058</p>
+                    <p>UDISE CODE: 12150103101</p>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="navbar" id="navbar">
+                <a href="#home" onclick="switchPage('home')" class="nav-item active">HOME</a>
+                
+                <!-- About Us Link -->
+                <a href="#about" onclick="switchPage('about')" class="nav-item">ABOUT US</a>
+
+                <!-- Mandatory Disclosure Nested Menu -->
+                <div class="dropdown" id="disclosureDropdown">
+                    <button class="dropdown-toggle" onclick="toggleDropdown(event)">
+                        DISCLOSURE <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <!-- Certificates -->
+                        <li class="nested-dropdown">
+                            <a href="javascript:void(0);" class="nested-toggle" onclick="toggleNested(event)">
+                                Certificates <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                            <ul class="nested-menu">
+                                <li><a href="fsc.pdf" target="_blank">FIRE SAFETY CERTIFICATE</a></li>
+                                <li><a href="bsc.pdf" target="_blank">BUILDING SAFETY CERTIFICATE</a></li>
+                                <li><a href="dwsc.pdf" target="_blank">DRINKING WATER & SANITATION CERTIFICATE</a></li>
+                                <li><a href="lc.pdf" target="_blank">LAND CERTIFICATE</a></li>
+                                <li><a href="noc.pdf" target="_blank">AFFILIATION STATUS</a></li>
+                                <li><a href="noc.pdf" target="_blank">NO OBJECTION CERTIFICATE(FROM DDSE ROING)</a></li>
+				<li><a href="noc.pdf" target="_blank">FEE STRUCTURE</a></li>
+				<li><a href="noc.pdf" target="_blank">MANDATORY PUBLIC DISCLOSURE</a></li>
+				<li><a href="noc.pdf" target="_blank">SELF CERTIFICATION</a></li>
+                            </ul>
+                        </li>
+                        <!-- Others -->
+                        <li class="nested-dropdown">
+                            <a href="javascript:void(0);" class="nested-toggle" onclick="toggleNested(event)">
+                                Others <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                            <ul class="nested-menu">
+                                <li><a href="ptads.pdf" target="_blank">PARENTS-TEACHERS ASSOCIATION</a></li>
+                                <li><a href="smcds.pdf" target="_blank">SCHOOL MANAGEMENT COMMITTEE</a></li>
+                                <li><a href="employeeds.pdf" target="_blank">EMPLOYEES</a></li>
+                                <li><a href="tc.pdf" target="_blank">TRANSFER CERTIFICATE(SAMPLE)</a></li>
+                                <li><a href="adm.pdf" target="_blank">ADMISSION FORM(SAMPLE)</a></li>
+                                <li><a href="ltyrds.pdf" target="_blank">LAST THREE YEARS RESULT (CLASS X)</a></li>
+                                <li><a href="academic.pdf" target="_blank">ACADEMIC CALENDAR (SECONDARY)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Gallery Link -->
+                <a href="#gallery" onclick="switchPage('gallery')" class="nav-item">GALLERY</a>
+
+                <!-- Apply Now Link -->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdaJ6SOseThPrbnhRvA4EpFbZws-dB9oC5K4jtf3MJXssxmCg/viewform?usp=preview" class="nav-btn-apply">APPLY NOW</a>
+            </nav>
+
+            <button class="mobile-menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Content Area Container -->
+    <main id="content-container">
+
+        <!-- ================= HOME VIEW ================= -->
+        <div id="view-home" class="page-view">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <!-- Background Video Graphic -->
+                <video autoplay loop muted playsinline class="hero-bg-video">
+                    <source src="graphics.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-overlay"></div>
+
+                <div class="container hero-grid">
+                    <div class="hero-content">
+                        <span class="badge">DEPARTMENT OF EDUCATION</span>
+                        <h2>GSS PARBUK-KANGKONG</h2>
+                        <p style="text-align: justify;">Government Secondary School Parbuk, established in 1964, stands as a prominent educational institution in Arunachal Pradesh. 
+Affiliated with the Central Board of Secondary Education (CBSE), the school has a rich history and a strong commitment to academic excellence and holistic development. 
+Located in a picturesque setting, GSS Parbuk benefits from the natural beauty of its surroundings, fostering a conducive environment for learning. 
+The school’s infrastructure is designed to support a diverse curriculum, offering students a range of subjects from sciences to humanities, along with extracurricular activities that promote physical, artistic, and social skills.</p>
+                        <div class="hero-buttons">
+                            <button onclick="switchPage('gallery')" class="btn-primary">View Gallery</button>
+                            <a href="https://forms.google.com" target="_blank" class="btn-secondary">Apply Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Video Container -->
+                    <div class="portal-card-box">
+                        <div class="container-header"><i class="fa-solid fa-video"></i> SCHOOL CAMPUS</div>
+                        <div class="video-placeholder-box">
+                            <video autoplay loop muted playsinline width="100%" height="100%" style="object-fit: cover; border-radius: 4px;">
+                                <source src="school.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Metrics Section -->
+            <section class="metrics-section">
+                <div class="container metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-icon blue"><i class="fa-solid fa-users"></i></div>
+                        <div>
+                            <h3>Students(UDISE+ Record)</h3>
+                            <p>Enrolled Strength: 121</p>
+			    <p>Total Boys: 53 </p>
+			    <p>Total Girls: 68</p>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-icon indigo"><i class="fa-solid fa-image"></i></div>
+                        <div>
+                            <h3>Campus Photo</h3>
+                            <p>Featured View</p>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-icon green"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div>
+                            <h3>REGULAR Affiliation</h3>
+                            <p>CBSE Board</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Circular and Notice Section -->
+            <section class="notices-section">
+                <div class="container notices-grid">
+                    <!-- Circular Box -->
+                    <div class="notice-box">
+                        <div class="notice-header circular-bg">
+                            <h3><i class="fa-solid fa-bullhorn"></i> CBSE Circulars</h3>
+                            <span>Latest</span>
+                        </div>
+                        <div class="notice-body">
+                            <div class="notice-item">
+                                <span class="tag">Update</span>
+				
+                                <p><a href="academic.pdf" target="_blank" style="color: inherit; text-decoration: none;">Documents required for admission.</a></p>
+                                <span class="16-10-2026">October 2026</span>
+				<p><a href="academic.pdf" target="_blank" style="color: inherit; text-decoration: none;">Documents required for admission.</a></p>
+                                <span class="16-10-2026">October 2026</span>
+				<p><a href="academic.pdf" target="_blank" style="color: inherit; text-decoration: none;">Documents required for admission.</a></p>
+                                <span class="16-10-2026">October 2026</span>
+                               
+			    </div>
+                        </div>
+                    </div>
+
+                    <!-- Notice Box -->
+                    <div class="notice-box">
+                        <div class="notice-header notice-bg">
+                            <h3><i class="fa-solid fa-clipboard-list"></i> Notices</h3>
+                            <span>Important</span>
+                        </div>
+                        <div class="notice-body">
+                            <div class="notice-item">
+                                <span class="tag green-tag">General</span>
+                                <p><a href="academic.pdf" target="_blank" style="color: inherit; text-decoration: none;">Documents required for admission.</a></p>
+                                <span class="16-10-2026">October 2026</span>
+				<p><a href="academic.pdf" target="_blank" style="color: inherit; text-decoration: none;">Documents required for admission.</a></p>
+                                <span class="16-10-2026">October 2026</span>
+				<p><a href="academic.pdf" target="_blank" style="color: inherit; text-decoration: none;">Documents required for admission.</a></p>
+                                <span class="16-10-2026">October 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================= ABOUT US VIEW ================= -->
+        <div id="view-about" class="page-view hidden">
+            <div class="container static-content-wrapper">
+                <h2>About Us</h2>
+                <div class="content-body">
+                    <p class="lead"><strong>Welcome to Government Secondary School Parbuk</strong></p>
+                    <p style="font-family: 'Monotype Corsiva', cursive, serif; text-align: justify;">One of the defining features of GSS Parbuk is its dedicated faculty. Teachers at the school are not only educators but also mentors who guide students in their personal and academic journeys. They employ innovative teaching methods to engage students, ensuring that learning is both enjoyable and effective.
+
+The school’s community plays a vital role in its success. Parents and local stakeholders actively participate in school activities, creating a supportive network that enhances the educational experience. This collaboration fosters a sense of belonging and encourages students to excel in all areas of life.
+
+GSS Parbuk also emphasizes the importance of character building and values education. Through various programs and activities, students are encouraged to develop qualities such as integrity, responsibility, and respect. This focus on values prepares them to become responsible citizens who contribute positively to society.
+
+In conclusion, Government Secondary School Parbuk is not just an educational institution; it is a nurturing ground for future leaders and changemakers. With its commitment to excellence, dedicated faculty, and supportive community, GSS Parbuk continues to be a beacon of education in Arunachal Pradesh, inspiring generations of students to reach their ultimate potential.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= GALLERY VIEW (12 Cards) ================= -->
+        <div id="view-gallery" class="page-view hidden">
+            <div class="container gallery-container">
+                <div class="section-title">
+                    <h2>School Gallery</h2>
+                    <p>Mandatory images as per CBSE-OASIS/SARAS </p>
+                </div>
+                <div class="gallery-grid">
+                    
+                    <!-- Card 1 -->
+                    <div class="gallery-card">
+                        <div class="gallery-img-display">
+                            <img src="classroom.jpg" alt="Gallery Image 1">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4>CLASS ROOM</h4>
+                            <p>GSS Parbuk</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="gallery-card">
+                        <div class="gallery-img-display">
+                            <img src="school.jpg" alt="Gallery Image 2">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4>SCHOOL LOGO</h4>
+                            <p>GSS Parbuk</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="gallery-card">
+                        <div class="gallery-img-display">
+                            <img src="schoolbuilding.jpg" alt="Gallery Image 3">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4>SCHOOL BUILDING</h4>
+                            <p>GSS Parbuk</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="gallery-card">
+                        <div class="gallery-img-display">
+                            <img src="smartclass.jpeg" alt="Gallery Image 4">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4>SMART CLASS ROOM</h4>
+                            <p>GSS Parbuk</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="gallery-card">
+                        <div class="gallery-img-display">
+                            <img src="library.jpg" alt="Gallery Image 5">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4>LIBRARY ROOM</h4>
+                            <p>GSS Parbuk</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="gallery-card">
+                        <div class="gallery-img-display">
+                            <img src="comp.jpg" alt="Gallery Image 6">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4>COMPUTER ROOM</h4>
+                            <p>GSS Parbuk</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="gallery-card">
+                        <div class="gallery-img-display">
+                            <img src="bio.jpg" alt="Gallery Image 7">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4>BIOLOGY LAB</h4>
+                            <p>GSS Parbuk</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="gallery-card">
+                        <div class="gallery-img-display">
+                            <img src="maths.jpg" alt="Gallery Image 8">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4>MATHEMATICS LAB</h4>
+                            <p>GSS Parbuk</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 9 -->
+                    <div class="gallery-card">
+                        <div class="gallery-img-display">
+                            <img src="playground.jpg" alt="Gallery Image 9">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4>PLAYGROUND</h4>
+                            <p>GSS Parbuk</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 10 -->
+                    <div class="gallery-card">
+                        <div class="gallery-img-display">
+                            <img src="physics.jpg" alt="Gallery Image 10">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4>PHYSICS LAB</h4>
+                            <p>GSS Parbuk</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 11 -->
+                    <div class="gallery-card">
+                        <div class="gallery-img-display">
+                            <img src="ramp.jpg" alt="Gallery Image 11">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4>RAMP FOR CWSN</h4>
+                            <p>GSS Parbuk</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 12 -->
+                    <div class="gallery-card">
+                        <div class="gallery-img-display">
+                            <img src="chem.jpg" alt="Gallery Image 12">
+                        </div>
+                        <div class="gallery-card-info">
+                            <h4>CHEMISTRY LAB</h4>
+                            <p>GSS Parbuk</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Template -->
+    <footer class="portal-footer">
+        <div class="container footer-grid">
+     <div>
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Parbuk, Arunachal Pradesh</p>
+                <p><i class="fa-solid fa-phone"></i> +91 7002840841</p>
+                <p><i class="fa-solid fa-envelope"></i> gssparbuk1964@gmail.com</p>
+            </div>       
+	<div>
+                <div class="footer-logo">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>GSS Parbuk</span>
+                </div>
+                <p>Excellence in Education</p>
+            </div>
+            
+            
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Govt. Secondary School Parbuk. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
